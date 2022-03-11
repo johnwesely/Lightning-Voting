@@ -68,12 +68,19 @@
                                 Open
                             </div>
                             <button class="bg-gray-100 hover:bg-gray-200 rounded-full h-7
-                                            transition duration-150 ease-in border pb-2 px-4">
+                                            transition duration-150 ease-in border pb-2 px-4"
+                                    x-data="{ isOpen: false }"
+                                    @click="isOpen = !isOpen">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" 
                                           stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
                                 </svg> 
-                                <ul class="absolute w-44 font-semibold bg-white shadow-large rounded-xl py-3 text-left ml-6
+                                <ul x-cloak
+                                    x-show="isOpen"
+                                    x-transition.origin.top.left.duration.500ms
+                                    @click.away="isOpen = false"
+                                    @keydown.escape.window="isOpen = false"
+                                    class="absolute w-44 font-semibold bg-white shadow-large rounded-xl py-3 text-left ml-6
                                            shadow-dialog transition ease-in duration-200">
                                     <li>
                                         <a href="" class="hover:bg-gray-100 px-5 py3 transition ease-in duration-150">
