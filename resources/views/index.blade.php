@@ -40,11 +40,13 @@
                     </button>
                 </div>
             </div>
-            <div class="flex px-2 py-6">
-                <a href="#" class="flex-none">
-                    <img src="https://source.unsplash.com/200x200/?face&crop=face&v=1" alt="avatar" class="w-14 h-14 rounded-xl">
-                </a>
-                <div class="mx-4">
+            <div class="flex flex-1 px-2 py-6">
+                <div class="flex-none">
+                    <a href="#" class="flex-none">
+                        <img src="https://source.unsplash.com/200x200/?face&crop=face&v=1" alt="avatar" class="w-14 h-14 rounded-xl">
+                    </a>
+                </div>
+                <div class="mx-4 w-full">
                     <h4 class="text-xl font-semibold">
                         <a href="" class="hover:underline">
                             A Random Title Can Go Here
@@ -66,8 +68,8 @@
                                 Open
                             </div>
                             <button class="bg-gray-100 hover:bg-gray-200 rounded-full h-7
-                                            transition duration-150 ease-in">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            transition duration-150 ease-in border pb-2 px-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" 
                                           stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
                                 </svg> 

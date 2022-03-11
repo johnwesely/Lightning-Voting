@@ -93,9 +93,9 @@
                                 Attach
                             </span>
                         </button>
-                        <button type="button"
+                        <button type="submit"
                                 class="flex items-center text-white justify-center px-6 py-3 w-1/2 h-11 text-xs bg-x-blue font-semibold rounded-xl border border-x-blue 
-                                       transition ease-in duration-200 hover:border-x-blue-hover">
+                                       transition ease-in duration-200 hover:bg-x-blue-hover">
                                 Submit 
                         </button>
                     </div>

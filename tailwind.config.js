@@ -16,9 +16,10 @@ module.exports = {
                 'xxs': ['.625rem', { lineHeight: '1rem'}]
             },
             spacing: {
+                22: '5.5rem',
+                44: '11rem',
                 70: '17.5rem',
-                175: '43.75rem',
-                44: '11rem'
+                175: '43.75rem'
             },
             maxWidth: {
                 custom: '68.5rem',
