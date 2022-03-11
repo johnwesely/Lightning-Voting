@@ -19,22 +19,25 @@ module.exports = {
                 22: '5.5rem',
                 44: '11rem',
                 70: '17.5rem',
+                76: '19rem',
+                104: '26rem',
                 175: '43.75rem'
             },
             maxWidth: {
                 custom: '68.5rem',
             },
             colors: {
-                'x-red': '#ef2e58',
+                'x-red': '#f25779',
                 'x-pink': '#ed9390',
                 'x-grey': '#5d576b',
                 'x-blue': '#407076',
                 'x-blue-hover': '#223c3f',
                 'x-light-pink': '#fededc',
                 'x-blush': '#f3e2e7',
-                'x-yellow': '#fad389',
+                'x-yellow': '#f9ca71',
                 'x-bg': '#fefaf3',
-                'x-green': '#5a9367'
+                'x-green': '#5a9367',
+                'x-purple': '#9e6dd9'
             },
             boxShadow: {
                 'card': '4px 4px 15px 0 rgba(36, 37, 38, 0.08)',
