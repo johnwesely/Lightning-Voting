@@ -21,17 +21,18 @@ module.exports = {
                 44: '11rem'
             },
             maxWidth: {
-                custom: '62.5rem',
+                custom: '68.5rem',
             },
             colors: {
                 'x-red': '#ef2e58',
                 'x-pink': '#ed9390',
                 'x-grey': '#5d576b',
                 'x-blue': '#407076',
-                'x-blue-hover': '#39646a',
-                'x-light-pink': '#fe938c',
+                'x-blue-hover': '#223c3f',
+                'x-light-pink': '#fededc',
                 'x-blush': '#f3e2e7',
                 'x-yellow': '#fad389',
+                'x-bg': '#fefaf3',
                 'x-green': '#5a9367'
             },
             boxShadow: {

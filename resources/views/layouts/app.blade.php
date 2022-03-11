@@ -52,7 +52,55 @@
 
     <main class="container mx-auto flex max-w-custom">
         <div class="w-70 mr-5">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur atque adipisci nam iure, ducimus, impedit autem iusto minus neque nostrum, blanditiis mollitia? Ducimus recusandae sint, rem ab totam perferendis voluptate ad dignissimos! Quis quibusdam esse quidem quo. Aspernatur expedita similique enim inventore tempore eos, at eaque totam nobis sit sapiente sint doloribus repudiandae itaque deserunt pariatur possimus nostrum perspiciatis minima, architecto dolorum fugit alias obcaecati dolor! Consequatur perspiciatis in error suscipit dolorem deserunt ipsam nihil expedita, laudantium magni non accusantium reiciendis qui ratione aspernatur quas, natus corrupti vel dolores quasi nam quis at dignissimos. Laudantium praesentium laborum quas nostrum voluptatem!
+            <div class="border-2 border-x-blue rounded-xl mt-16 bg-white">
+                <div class="text-center px-6 py-2 pt-6">
+                    <h3 class="font-semibold text-base">
+                        Add an idea
+                    </h3>
+                    <p class="text-xs mt-4">
+                        Let use know what you would like and we will take a look
+                    </p>
+                </div>
+
+                <form action="#" method="POST" class="space-y-4 px-4 py-6">
+                    <div>
+                        <input type="text" 
+                            class="w-full bg-gray-100 rounded-xl placehold-gray-900 px-4 py-2 border-none text-sm 
+                                    focus:ring-0 focus:border-x-blue/50"
+                            placeholder="your idea">
+                    </div>
+                    <div>
+                        <select name="category_add" id="category_add" class="w-full rounded-xl px-4 py-2 border-none focus:ring-0 bg-gray-100 text-sm">
+                            <option value="Category One">Category One</option>
+                            <option value="Category Two">Category Two</option>
+                            <option value="Category Three">Category Three</option>
+                            <option value="Category Four">Category Four</option>
+                        </select>
+                    </div>
+                    <div>
+                        <textarea name="idea" id="idea" cols="30" rows="4" 
+                                  class="w-full bg-gray-100 rounded-xl placeholde-gray-900 text-sm px-4 py-2 border-none"
+                                  placeholder="describe your idea"></textarea>
+                    </div>
+                    <div class="flex items-center justify-between space-x-3">
+                        <button type="button"
+                                class="flex items-center justify-center px-6 py-3 w-1/2 h-11 text-xs bg-gray-200 font-semibold rounded-xl border border-gray-200 
+                                       transition ease-in duration-200 hover:border-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform -rotate-45 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13" />
+                            </svg>
+                            <span class="ml-1">
+                                Attach
+                            </span>
+                        </button>
+                        <button type="button"
+                                class="flex items-center text-white justify-center px-6 py-3 w-1/2 h-11 text-xs bg-x-blue font-semibold rounded-xl border border-x-blue 
+                                       transition ease-in duration-200 hover:border-x-blue-hover">
+                                Submit 
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
         <div class="w-175">
             <nav class="flex items-center justify-between text-xs">
