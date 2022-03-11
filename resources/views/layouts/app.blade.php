@@ -57,13 +57,13 @@
         <div class="w-175">
             <nav class="flex items-center justify-between text-xs">
                 <ul class="flex uppercase font-semibold border-b-4 pb-3 space-x-10">
-                    <li><a href="#", class="mr-4 border-b-4 pb-3 border-x-blue">All Ideas (87)</a></li>
-                    <li><a href="#", class="mr-4 text-gray-400 transition duration-200 ease-in border-b-4 pb-3 hover:border-x-blue">considering (87)</a></li>
-                    <li><a href="#", class="mr-4 text-gray-400 transition duration-200 ease-in border-b-4 pb-3 hover:border-x-blue">in progress (87)</a></li>
+                    <li><a href="#", class="border-b-4 pb-3 border-x-blue">All Ideas (87)</a></li>
+                    <li><a href="#", class="text-gray-600 transition duration-200 ease-in border-b-4 pb-3 hover:border-x-blue">considering (87)</a></li>
+                    <li><a href="#", class="text-gray-600 transition duration-200 ease-in border-b-4 pb-3 hover:border-x-blue">in progress (87)</a></li>
                 </ul>
                 <ul class="flex uppercase font-semibold border-b-4 pb-3 space-x-10">
-                    <li><a href="#", class="mr-4 text-gray-400 transition duration-200 ease-in border-b-4 pb-3 hover:border-x-blue">implemented (87)</a></li>
-                    <li><a href="#", class="mr-4 text-gray-400 transition duration-200 ease-in border-b-4 pb-3 hover:border-x-blue">closed (87)</a></li>
+                    <li><a href="#", class="text-gray-600 transition duration-200 ease-in border-b-4 pb-3 hover:border-x-blue">implemented (87)</a></li>
+                    <li><a href="#", class="text-gray-600 transition duration-200 ease-in border-b-4 pb-3 hover:border-x-blue">closed (87)</a></li>
                 </ul>
             </nav>
             <div class="mt-8">
