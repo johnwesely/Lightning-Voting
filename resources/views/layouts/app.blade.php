@@ -13,14 +13,16 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <livewire:styles/>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+
 </head>
 
 <body class="font-sans antialiased text-gray-900 bg-x-light-pink text-sm">
     <header class="flex flex-col md:flex-row items-center justify-between px-8 py-4">
-        <a href="#">
+        <a href="/">
             <img src="{{ asset('images/logo1.png') }}" alt="lightning bolt" class="w-32">
         </a>
         <div class="flex items-center mt-2 md:mt-0">
@@ -119,6 +121,7 @@
             </div>
         </div>
     </main>
+    <livewire:scripts />
 </body>
 
 </html>
