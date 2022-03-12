@@ -19,11 +19,11 @@
 </head>
 
 <body class="font-sans antialiased text-gray-900 bg-x-light-pink text-sm">
-    <header class="flex items-center justify-between px-8 py-4">
+    <header class="flex flex-col md:flex-row items-center justify-between px-8 py-4">
         <a href="#">
             <img src="{{ asset('images/logo1.png') }}" alt="lightning bolt" class="w-32">
         </a>
-        <div class="flex items-center">
+        <div class="flex items-center mt-2 md:mt-0">
             @if (Route::has('login'))
             <div class="px-6 py-4">
                 @auth
@@ -50,9 +50,9 @@
         </div>
     </header>
 
-    <main class="container mx-auto flex max-w-custom">
-        <div class="w-70 mr-5">
-            <div class="border-2 border-x-blue rounded-xl mt-16 bg-white">
+    <main class="container mx-auto flex max-w-custom flex-col md:flex-row">
+        <div class="w-70 mx-auto md:mx-0 md:mr-5">
+            <div class="md:sticky md:top-8 border-2 border-x-blue rounded-xl mt-16 bg-white">
                 <div class="text-center px-6 py-2 pt-6">
                     <h3 class="font-semibold text-base">
                         Add an idea
@@ -102,8 +102,8 @@
                 </form>
             </div>
         </div>
-        <div class="w-175">
-            <nav class="flex items-center justify-between text-xs">
+        <div class="w-full md:w-175 px-2 md:px-0">
+            <nav class="hidden md:flex items-center justify-between text-xs">
                 <ul class="flex uppercase font-semibold border-b-4 pb-3 space-x-10">
                     <li><a href="#", class="border-b-4 pb-3 border-x-blue">All Ideas (87)</a></li>
                     <li><a href="#", class="text-gray-600 transition duration-200 ease-in border-b-4 pb-3 hover:border-x-blue">considering (87)</a></li>

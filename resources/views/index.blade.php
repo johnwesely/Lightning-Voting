@@ -1,6 +1,6 @@
 <x-app-layout>
-    <div class="filters flex space-x-6">
-        <div class="w-1/3">
+    <div class="filters flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-6">
+        <div class="w-full md:w-1/3">
             <select name="category" id="category" class="w-full rounded-xl px-4 py-2 border-none focus:ring-0">
                 <option value="Category One">Category One</option>
                 <option value="Category Two">Category Two</option>
@@ -8,7 +8,7 @@
                 <option value="Category Four">Category Four</option>
             </select>
         </div>
-        <div class="w-1/3">
+        <div class="w-full md:w-1/3">
             <select name="filters" id="filters" class="w-full rounded-xl px-4 py-2 border-none focus:ring-0">
                 <option value="Filter One">Filter One</option>
                 <option value="Filter Two">Filter Two</option>
@@ -16,7 +16,7 @@
                 <option value="Filter Four">Filter Four</option>
             </select>
         </div>
-        <div class="w-2/3 relative">
+        <div class="w-full md:w-2/3 relative">
             <input type="search" placeholder="Find an Idea" class="w-full rounded-xl bg-white px-4 py-2 pl-10 border-none focus:ring-0 placeholder-gray-900">
             <div class="absolute top-0 flex items-center h-full ml-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -28,7 +28,7 @@
 
     <div class="ideas-container space-y-6 my-6 hover:shadow-card transition ease-in duration-200 cursor-pointer">
         <div class="idea-container bg-white rounded-xl flex">
-            <div class="border-r border-gray-100 px-5 py-8">
+            <div class="hidden md:block border-r border-gray-100 px-5 py-8">
                 <div class="text-center">
                     <div class="font-semibold text-2xl">12</div>
                     <div class="text-grey-500">Votes</div>
@@ -40,22 +40,22 @@
                     </button>
                 </div>
             </div>
-            <div class="flex flex-1 px-2 py-6">
-                <div class="flex-none">
+            <div class="flex flex-col md:flex-row flex-1 px-2 py-6">
+                <div class="flex-none mx-2 md:mx-0">
                     <a href="#" class="flex-none">
                         <img src="https://source.unsplash.com/200x200/?face&crop=face&v=1" alt="avatar" class="w-14 h-14 rounded-xl">
                     </a>
                 </div>
-                <div class="mx-4 w-full">
-                    <h4 class="text-xl font-semibold">
+                <div class="flex flex-col justify-between mx-2 md:mx-4 w-full">
+                    <h4 class="text-xl mt-2 md:mt-0 font-semibold">
                         <a href="" class="hover:underline">
                             A Random Title Can Go Here
                         </a>
                     </h4>
                     <div class="text-gray-600 mt-3 line-clamp-3">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe cumque id vero amet, accusantium dolorem numquam reiciendis, necessitatibus distinctio similique commodi natus ut molestias rerum dolor minima adipisci error aliquid laborum cupiditate sunt consequuntur eaque! Praesentium totam, unde, amet, distinctio expedita quia quasi qui fugit quod vitae molestiae? Itaque tempore illum, nemo adipisci expedita exercitationem. Dolor explicabo alias placeat doloribus est magnam impedit? Nihil iure reiciendis, unde quod cum explicabo! Fugiat nostrum, praesentium veniam enim dolores itaque mollitia eveniet, rem similique quam porro omnis repellendus saepe laudantium odit reiciendis nam asperiores in quasi autem impedit quae voluptatem? Sunt, molestiae fugiat!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis explicabo autem ea rerum optio perspiciatis.
                     </div>
-                    <div class="flex justify-between items-center mt-4">
+                    <div class="flex flex-col md:flex-row justify-between md:items-center mt-4">
                         <div class="flex items-center text-xs font-semibold space-x-2 text-gray-400">
                             <div>10 Hours Ago</div>
                             <div>&bull;</div>
@@ -63,12 +63,12 @@
                             <div>&bull;</div>
                             <div class="text-gray-900">Three Comments</div>
                         </div>
-                        <div class="flex items-center space-x-2">
+                        <div class="flex items-center space-x-2 mt-4 md:mt-0">
                             <div class="bg-gray-200 text-xxs font-bold uppercase leading-none rounded-full text-center w-28 h-7 px-4 py-2">
                                 Open
                             </div>
                             <button class="bg-gray-100 hover:bg-gray-200 rounded-full h-7
-                                            transition duration-150 ease-in border pb-2 px-4"
+                                            transition duration-150 ease-in border pb-2 px-4 relative"
                                     x-data="{ isOpen: false }"
                                     @click="isOpen = !isOpen">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -80,8 +80,9 @@
                                     x-transition.origin.top.left.duration.500ms
                                     @click.away="isOpen = false"
                                     @keydown.escape.window="isOpen = false"
-                                    class="absolute w-44 font-semibold bg-white shadow-large rounded-xl py-3 text-left ml-6
-                                           shadow-dialog transition ease-in duration-200">
+                                    class="absolute w-44 font-semibold bg-white rounded-xl py-3 text-left 
+                                           shadow-dialog transition ease-in duration-200
+                                           md:ml-8 top-8 md:top-6 right-0 md:left-0">
                                     <li>
                                         <a href="" class="hover:bg-gray-100 px-5 py3 transition ease-in duration-150">
                                             mark as spam
@@ -93,6 +94,21 @@
                                         </a>
                                     </li>
                                 </ul>
+                            </button>
+                        </div>
+
+                        <div class="mt-4 md:mt-0 md:hidden flex items-center">
+                            <div class="bg-gray-100 text-center rounded-xl h-10 px-4 py-2 pr-8">
+                                <div class="text-sm font-bold leading-none">
+                                    12
+                                </div>
+                                <div class="text-xxs font-semibold leading-none text-gray-400">
+                                    Votes 
+                                </div>
+                            </div>
+                            <button class="-mx-5 w-20 h-10 bg-gray-200 text-white border border-gray-200 font-bold text-xxs uppercase rounded-xl hover:border-gray-400
+                                           transition duration-200 ease-in px-4 py-3">
+                                voted
                             </button>
                         </div>
                     </div>
