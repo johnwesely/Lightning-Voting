@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use App\Models\Idea;
+use App\Models\Category;
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,6 +15,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        Category::factory()->create(['name' => 'Category 1']);
+        Category::factory()->create(['name' => 'Category 2']);
+        Category::factory()->create(['name' => 'Category 3']);
+        Category::factory()->create(['name' => 'Category 4']);
+        
         Idea::factory(30)->create();
     }
 }

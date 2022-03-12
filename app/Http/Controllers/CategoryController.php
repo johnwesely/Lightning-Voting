@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreideaRequest;
-use App\Http\Requests\UpdateideaRequest;
-use App\Models\Idea;
+use App\Http\Requests\StoreCategoryRequest;
+use App\Http\Requests\UpdateCategoryRequest;
+use App\Models\Category;
 
-class IdeaController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +15,7 @@ class IdeaController extends Controller
      */
     public function index()
     {
-        return view('idea.index', [
-            'ideas' => Idea::with('user', 'category')->simplePaginate(10)
-        ]);
+        //
     }
 
     /**
@@ -33,10 +31,10 @@ class IdeaController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreideaRequest  $request
+     * @param  \App\Http\Requests\StoreCategoryRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreideaRequest $request)
+    public function store(StoreCategoryRequest $request)
     {
         //
     }
@@ -44,23 +42,21 @@ class IdeaController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\idea  $idea
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function show(idea $idea)
+    public function show(Category $category)
     {
-        return view('idea.show', [
-            'idea' => $idea,
-        ]);
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\idea  $idea
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function edit(idea $idea)
+    public function edit(Category $category)
     {
         //
     }
@@ -68,11 +64,11 @@ class IdeaController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateideaRequest  $request
-     * @param  \App\Models\idea  $idea
+     * @param  \App\Http\Requests\UpdateCategoryRequest  $request
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateideaRequest $request, idea $idea)
+    public function update(UpdateCategoryRequest $request, Category $category)
     {
         //
     }
@@ -80,10 +76,10 @@ class IdeaController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\idea  $idea
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function destroy(idea $idea)
+    public function destroy(Category $category)
     {
         //
     }
