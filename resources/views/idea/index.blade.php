@@ -26,9 +26,17 @@
         </div>
     </div> <!-- End Filters Container -->
 
-    <div class="ideas-container space-y-6 my-6 hover:shadow-card transition ease-in duration-200 cursor-pointer">
+    <div class="ideas-container space-y-6 my-6 ">
         @foreach($ideas as $idea)
-        <div class="idea-container bg-white rounded-xl flex">
+        <div x-data
+             @click="const target = $event.target.tagName.toLowerCase()
+                const ignores = ['button', 'svg', 'path', 'anchor']
+
+                if (! ignores.includes(target)) {
+                    $event.target.closest('.idea-container').querySelector('.idea-link').click()
+                }
+             "  
+             class="idea-container bg-white rounded-xl flex hover:shadow-card transition ease-in duration-200 cursor-pointer">
             <div class="hidden md:block border-r border-gray-100 px-5 py-8">
                 <div class="text-center">
                     <div class="font-semibold text-2xl">12</div>
@@ -49,7 +57,7 @@
                 </div>
                 <div class="flex flex-col justify-between mx-2 md:mx-4 w-full">
                     <h4 class="text-xl mt-2 md:mt-0 font-semibold">
-                        <a href="{{ route('idea.show', $idea->slug) }}" class="hover:underline">
+                        <a href="{{ route('idea.show', $idea->slug) }}" class="idea-link hover:underline">
                             {{  $idea->title }}
                         </a>
                     </h4>
