@@ -5,6 +5,7 @@ module.exports = {
         './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
+        './App/Models/Idea.php'
     ],
 
     theme: {
@@ -37,7 +38,7 @@ module.exports = {
                 'x-yellow': '#f9ca71',
                 'x-bg': '#fefaf3',
                 'x-green': '#5a9367',
-                'x-purple': '#9e6dd9'
+                'x-purple': '#ab81de'
             },
             boxShadow: {
                 'card': '4px 4px 15px 0 rgba(36, 37, 38, 0.08)',

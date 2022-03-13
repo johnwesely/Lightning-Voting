@@ -73,8 +73,8 @@
                             <div class="text-gray-900">Three Comments</div>
                         </div>
                         <div class="flex items-center space-x-2 mt-4 md:mt-0">
-                            <div class="bg-gray-200 text-xxs font-bold uppercase leading-none rounded-full text-center w-28 h-7 px-4 py-2">
-                                Open
+                            <div class="{{ $idea->getStatusClasses() }} text-xxs font-bold uppercase leading-none rounded-full text-center w-28 h-7 px-4 py-2">
+                                {{ ucwords($idea->status->name) }} 
                             </div>
                             <button class="bg-gray-100 hover:bg-gray-200 rounded-full h-7
                                             transition duration-150 ease-in border pb-2 px-4 relative"
@@ -130,4 +130,5 @@
     <div class="my-8">
         {{ $ideas->links() }}
     </div>
+
 </x-app-layout>

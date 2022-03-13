@@ -1104,6 +1104,10 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(254 222 220 / var(--tw-bg-opacity));
 }
+.bg-x-purple {
+  --tw-bg-opacity: 1;
+  background-color: rgb(171 129 222 / var(--tw-bg-opacity));
+}
 .bg-indigo-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(238 242 255 / var(--tw-bg-opacity));
@@ -1324,7 +1328,7 @@ select {
 }
 .text-x-purple {
   --tw-text-opacity: 1;
-  color: rgb(158 109 217 / var(--tw-text-opacity));
+  color: rgb(171 129 222 / var(--tw-text-opacity));
 }
 .text-x-yellow {
   --tw-text-opacity: 1;
